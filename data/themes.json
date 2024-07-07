@@ -1,0 +1,440 @@
+[
+    {
+        "id": "parent-teacher",
+        "variables": {
+            "title": "Réunion parents-professeurs",
+            "sceneSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 600\"><!-- Sky background --><rect x=\"0\" y=\"0\" width=\"800\" height=\"400\" fill=\"#87CEEB\"/><!-- Sun --><circle cx=\"700\" cy=\"100\" r=\"40\" fill=\"#FFD700\"/><path d=\"M700,50 L700,20 M670,70 L650,50 M730,70 L750,50 M650,100 L620,100 M750,100 L780,100\" stroke=\"#FFD700\" stroke-width=\"4\"/><!-- Clouds --><path d=\"M50,100 Q75,80 100,100 T150,100 T200,100 T250,100\" fill=\"#FFFFFF\"/><path d=\"M500,50 Q525,30 550,50 T600,50 T650,50\" fill=\"#FFFFFF\"/><!-- Ground --><rect x=\"0\" y=\"400\" width=\"800\" height=\"200\" fill=\"#7CFC00\"/><!-- School building --><rect x=\"100\" y=\"150\" width=\"600\" height=\"350\" fill=\"#FFA07A\"/><rect x=\"120\" y=\"170\" width=\"560\" height=\"310\" fill=\"#FFE4B5\"/><!-- Windows --><rect x=\"150\" y=\"200\" width=\"80\" height=\"80\" fill=\"#4682B4\"/><rect x=\"250\" y=\"200\" width=\"80\" height=\"80\" fill=\"#4682B4\"/><rect x=\"450\" y=\"200\" width=\"80\" height=\"80\" fill=\"#4682B4\"/><rect x=\"550\" y=\"200\" width=\"80\" height=\"80\" fill=\"#4682B4\"/><!-- Door --><rect x=\"350\" y=\"350\" width=\"100\" height=\"150\" fill=\"#8B4513\"/><circle cx=\"435\" cy=\"425\" r=\"5\" fill=\"#FFD700\"/><!-- School sign --><rect x=\"150\" y=\"100\" width=\"500\" height=\"80\" fill=\"#4169E1\"/><path d=\"M150,100 L650,100 L625,180 L175,180 Z\" fill=\"#000080\"/><text x=\"320\" y=\"160\" font-family=\"Arial\" font-size=\"48\" fill=\"white\">ÉCOLE</text><!-- Teacher (static) --><rect x=\"200\" y=\"400\" width=\"60\" height=\"140\" fill=\"#000080\"/><circle cx=\"230\" cy=\"380\" r=\"30\" fill=\"#FFA07A\"/><rect x=\"215\" y=\"410\" width=\"30\" height=\"50\" fill=\"#FFFFFF\"/><rect x=\"225\" y=\"460\" width=\"10\" height=\"40\" fill=\"#FFFFFF\"/><rect x=\"200\" y=\"540\" width=\"30\" height=\"10\" fill=\"#000000\"/><rect x=\"230\" y=\"540\" width=\"30\" height=\"10\" fill=\"#000000\"/><!-- Student (variable) --><rect x=\"350\" y=\"450\" width=\"40\" height=\"90\" fill=\"#studentClothesColor#\"/><circle cx=\"370\" cy=\"430\" r=\"20\" fill=\"#studentSkinColor#\"/><rect x=\"360\" y=\"450\" width=\"20\" height=\"30\" fill=\"#studentShirtColor#\"/><rect x=\"350\" y=\"540\" width=\"20\" height=\"10\" fill=\"#000000\"/><rect x=\"370\" y=\"540\" width=\"20\" height=\"10\" fill=\"#000000\"/><!-- Parent (variable) --><rect x=\"500\" y=\"420\" width=\"50\" height=\"120\" fill=\"#parentClothesColor#\"/><circle cx=\"525\" cy=\"400\" r=\"25\" fill=\"#parentSkinColor#\"/><rect x=\"510\" y=\"425\" width=\"30\" height=\"40\" fill=\"#parentShirtColor#\"/><rect x=\"500\" y=\"540\" width=\"25\" height=\"10\" fill=\"#4B0082\"/><rect x=\"525\" y=\"540\" width=\"25\" height=\"10\" fill=\"#4B0082\"/><!-- School supplies --><rect x=\"50\" y=\"500\" width=\"60\" height=\"40\" fill=\"#FF0000\"/><rect x=\"60\" y=\"480\" width=\"40\" height=\"20\" fill=\"#FFFF00\"/><circle cx=\"70\" cy=\"530\" r=\"10\" fill=\"#0000FF\"/><circle cx=\"90\" cy=\"530\" r=\"10\" fill=\"#00FF00\"/></svg>",
+            "character1Name": "Professeur",
+            "character2Name": "Parent",
+            "character3Name": "Élève",
+            "interactionName": "Réunion",
+            "scoreUnit": "points",
+            "maxLostInteractions": 3
+        },
+        "conversations": [
+            {
+                "question": "Comment se comporte mon enfant en classe ?",
+                "answers": [
+                    { "text": "Oh, vous savez, il est... vivant. Très vivant. Un peu trop parfois.", "score": 1 },
+                    { "text": "Il a une approche créative de la discipline. Très créative.", "score": 2 },
+                    { "text": "Un ange ! Enfin, quand il dort pendant la sieste.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Que pensez-vous de la qualité des repas à la cantine ?",
+                "answers": [
+                    { "text": "Eh bien, les enfants grandissent, c'est déjà ça, non ?", "score": 1 },
+                    { "text": "Disons que ça les prépare aux régimes draconiens.", "score": 2 },
+                    { "text": "C'est une expérience culinaire... éducative !", "score": 3 }
+                ]
+            },
+            {
+                "question": "Y aura-t-il une sortie scolaire cette année ?",
+                "answers": [
+                    { "text": "On pensait faire le tour du pâté de maisons, ça compte ?", "score": 1 },
+                    { "text": "Oui, au musée des crayons cassés. Très instructif !", "score": 2 },
+                    { "text": "Nous explorons l'option d'une visite virtuelle de la cour de récréation.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Comment gérez-vous le droit à l'image des enfants pour les photos de classe ?",
+                "answers": [
+                    { "text": "On met des emojis sur leurs visages. Très tendance !", "score": 1 },
+                    { "text": "On prend les photos de dos, c'est plus sûr.", "score": 2 },
+                    { "text": "Nous avons un système de permissions très strict... que j'ai oublié dans mon autre veste.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Mon enfant dit qu'il s'ennuie en classe. Que faites-vous pour le stimuler ?",
+                "answers": [
+                    { "text": "L'ennui est le début de la créativité... ou de la sieste.", "score": 1 },
+                    { "text": "Nous avons installé un trampoline au fond de la classe.", "score": 2 },
+                    { "text": "Nous varions les couleurs de craie. C'est très stimulant, parait-il.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Quand aura lieu la fête de l'école cette année ?",
+                "answers": [
+                    { "text": "Oh, c'était la semaine dernière. Vous n'étiez pas au courant ?", "score": 1 },
+                    { "text": "Nous hésitons entre Noël et Pâques. Ou peut-être les deux en même temps ?", "score": 2 },
+                    { "text": "Dès que nous aurons trouvé un magicien qui accepte d'être payé en bons points.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Comment gérez-vous les conflits entre élèves ?",
+                "answers": [
+                    { "text": "On les laisse régler ça façon Hunger Games. Je plaisante... à moitié.", "score": 1 },
+                    { "text": "Nous avons un ring de boxe dans la cour. Euh, je veux dire, un cercle de dialogue.", "score": 2 },
+                    { "text": "Par un système sophistiqué de pierre-feuille-ciseaux arbitré par le hamster de la classe.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Pourquoi y a-t-il autant de devoirs ?",
+                "answers": [
+                    { "text": "C'est pour occuper les parents le soir. Un peu de solidarité, que diable !", "score": 1 },
+                    { "text": "Les devoirs ? Ah, je croyais que c'était des suggestions.", "score": 2 },
+                    { "text": "C'est pour développer les muscles des bras en portant les cartables.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Comment encouragez-vous la créativité des enfants ?",
+                "answers": [
+                    { "text": "On les laisse dessiner sur les murs. Ça évite de repeindre.", "score": 1 },
+                    { "text": "Nous avons remplacé tous les crayons par des baguettes magiques.", "score": 2 },
+                    { "text": "En organisant des concours de sculpture sur gomme. Très stimulant !", "score": 3 }
+                ]
+            },
+            {
+                "question": "Que faites-vous pour promouvoir une alimentation saine à l'école ?",
+                "answers": [
+                    { "text": "On a remplacé les bonbons par des cailloux. Riches en minéraux !", "score": 1 },
+                    { "text": "Nous avons un potager sur le toit. Enfin, quelques pots de terre.", "score": 2 },
+                    { "text": "Les légumes sont obligatoires. Même en cours de maths.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Comment gérez-vous l'utilisation des téléphones portables en classe ?",
+                "answers": [
+                    { "text": "On les utilise comme calculatrices. Et pour appeler les parents en cas de besoin.", "score": 1 },
+                    { "text": "Nous avons installé un brouilleur. Ou peut-être que le réseau est juste mauvais.", "score": 2 },
+                    { "text": "Ils sont confisqués et utilisés pour les appels de l'école. Économies de budget !", "score": 3 }
+                ]
+            },
+            {
+                "question": "Quelles mesures prenez-vous pour lutter contre le harcèlement scolaire ?",
+                "answers": [
+                    { "text": "On a mis des affiches 'Soyez gentils'. Ça devrait suffire, non ?", "score": 1 },
+                    { "text": "Nous avons un système de 'harceleur du mois'. Euh, je veux dire, 'gentillesse du mois'.", "score": 2 },
+                    { "text": "Nous organisons des ateliers de médiation animés par notre poisson rouge thérapeutique.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Comment encouragez-vous la lecture chez les enfants ?",
+                "answers": [
+                    { "text": "On a caché les télécommandes de la télé dans des livres.", "score": 1 },
+                    { "text": "Nous avons remplacé tous les manuels par des bandes dessinées.", "score": 2 },
+                    { "text": "En organisant des lectures nocturnes à la lampe torche. Très mystérieux !", "score": 3 }
+                ]
+            },
+            {
+                "question": "Que faites-vous pour promouvoir l'activité physique ?",
+                "answers": [
+                    { "text": "On a supprimé les chaises. Tout le monde debout !", "score": 1 },
+                    { "text": "Nous avons installé des tapis roulants sous les bureaux.", "score": 2 },
+                    { "text": "Les cours de maths se font en jonglant. Multitâche, vous comprenez.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Comment gérez-vous les allergies alimentaires à la cantine ?",
+                "answers": [
+                    { "text": "On sert la même chose à tout le monde : de la purée. Sans rien dedans.", "score": 1 },
+                    { "text": "Nous avons un menu unique : eau et pain. Très biblique.", "score": 2 },
+                    { "text": "Chaque enfant apporte son propre repas. Et le partage avec les autres.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Quelles sont les mesures de sécurité pour les sorties scolaires ?",
+                "answers": [
+                    { "text": "On attache les enfants ensemble. Comme des alpinistes, vous voyez.", "score": 1 },
+                    { "text": "Nous leur faisons porter des gilets jaunes. Ça marche pour les cyclistes.", "score": 2 },
+                    { "text": "Chaque enfant a un GPS implanté... Je plaisante, c'est juste un bracelet.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Comment gérez-vous les retards des élèves ?",
+                "answers": [
+                    { "text": "On change l'heure des horloges. Ils ne sont jamais en retard comme ça.", "score": 1 },
+                    { "text": "Nous avons installé un toboggan d'urgence pour entrer en classe.", "score": 2 },
+                    { "text": "Les retardataires doivent chanter l'hymne national devant toute la classe.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Que faites-vous pour encourager le respect de l'environnement ?",
+                "answers": [
+                    { "text": "On réutilise les vieux devoirs comme papier toilette. Écologique !", "score": 1 },
+                    { "text": "Nous avons remplacé les craies par des bâtons trouvés dans la cour.", "score": 2 },
+                    { "text": "Les enfants arrosent les plantes avec l'eau de leur gourde. Solidarité végétale !", "score": 3 }
+                ]
+            },
+            {
+                "question": "Comment abordez-vous l'éducation sexuelle ?",
+                "answers": [
+                    { "text": "On leur montre des photos de bébés. Le reste, c'est de la magie.", "score": 1 },
+                    { "text": "Nous utilisons des métaphores avec des abeilles. Beaucoup d'abeilles.", "score": 2 },
+                    { "text": "J'ai délégué ça au professeur de biologie. Ou était-ce le jardinier ?", "score": 3 }
+                ]
+            },
+            {
+                "question": "Que faites-vous pour les enfants qui ont des difficultés d'apprentissage ?",
+                "answers": [
+                    { "text": "On leur donne des devoirs plus gros. Ça compense, non ?", "score": 1 },
+                    { "text": "Nous avons un système de tutorat par les meilleurs élèves. Ou les moins pires.", "score": 2 },
+                    { "text": "On a installé des haut-parleurs dans la cour qui répètent les leçons en boucle.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Comment gérez-vous les enfants hyperactifs ?",
+                "answers": [
+                    { "text": "On les envoie courir autour de l'école. Plusieurs fois par jour.", "score": 1 },
+                    { "text": "Nous avons remplacé leurs chaises par des ballons de yoga.", "score": 2 },
+                    { "text": "Ils ont la responsabilité de secouer les effaceurs. Très thérapeutique.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Quelles mesures prenez-vous pour prévenir les poux ?",
+                "answers": [
+                    { "text": "On rase la tête de tous les enfants. Problème réglé !", "score": 1 },
+                    { "text": "Nous avons des poules dans la cour qui picorent les poux. Écologique !", "score": 2 },
+                    { "text": "Shampooing au vinaigre obligatoire tous les matins. Ça pique un peu, mais c'est efficace.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Comment encouragez-vous la politesse chez les élèves ?",
+                "answers": [
+                    { "text": "On les fait parler comme à la cour du Roi Soleil. Très chic !", "score": 1 },
+                    { "text": "Nous avons un système de points de politesse. Comme au permis de conduire.", "score": 2 },
+                    { "text": "Les impolis doivent faire la révérence à chaque fois qu'ils parlent.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Que faites-vous pour promouvoir l'apprentissage des langues étrangères ?",
+                "answers": [
+                    { "text": "On passe les dessins animés en version originale. Sous-titrée en latin.", "score": 1 },
+                    { "text": "Nous avons un perroquet polyglotte comme assistant. Très bavard.", "score": 2 },
+                    { "text": "Chaque jour est dédié à une langue différente. Aujourd'hui, c'est le klingon.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Comment gérez-vous les enfants qui s'endorment en classe ?",
+                "answers": [
+                    { "text": "On les laisse dormir. Au moins, ils ne perturbent pas le cours.", "score": 1 },
+                    { "text": "Nous avons installé des réveils sous chaque chaise. Très efficace !", "score": 2 },
+                    { "text": "On leur fait faire des siestes préventives pendant la récréation.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Que faites-vous pour encourager la participation en classe ?",
+                "answers": [
+                    { "text": "On tire au sort le nom des élèves. Comme une loterie, mais sans les gains.", "score": 1 },
+                    { "text": "Nous avons un système de 'pouces en l'air' façon réseau social.", "score": 2 },
+                    { "text": "Les élèves silencieux doivent porter un chapeau à grelots. Très musical !", "score": 3 }
+                ]
+            },
+            {
+                "question": "Comment gérez-vous les disputes dans la cour de récréation ?",
+                "answers": [
+                    { "text": "On a installé un ring de boxe. Avec des gants en mousse, bien sûr.", "score": 1 },
+                    { "text": "Nous organisons des duels de mime. Celui qui rit a perdu.", "score": 2 },
+                    { "text": "Les enfants doivent résoudre leurs conflits en jouant à pierre-feuille-ciseaux.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Que faites-vous pour les enfants qui ont le mal du pays en voyage scolaire ?",
+                "answers": [
+                    { "text": "On leur fait sentir leurs chaussettes sales. Ça rappelle la maison.", "score": 1 },
+                    { "text": "Nous leur donnons une photo de la cantine. Rien de tel pour se sentir comme à l'école.", "score": 2 },
+                    { "text": "On les appelle toutes les heures pour leur dire qu'ils nous manquent.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Comment gérez-vous les enfants qui ont le mal du pays en voyage scolaire ?",
+                "answers": [
+                    { "text": "On leur fait sentir leurs chaussettes sales. Ça rappelle la maison.", "score": 1 },
+                    { "text": "Nous leur donnons une photo de la cantine. Rien de tel pour se sentir comme à l'école.", "score": 2 },
+                    { "text": "On les appelle toutes les heures pour leur dire qu'ils nous manquent.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Que faites-vous pour encourager la propreté chez les élèves ?",
+                "answers": [
+                    { "text": "On organise des concours de 'la table la plus brillante'. Le gagnant reçoit un chiffon.", "score": 1 },
+                    { "text": "Nous avons remplacé les craies par du savon. Éducatif et hygiénique !", "score": 2 },
+                    { "text": "Les enfants doivent nettoyer le tableau avec leur mouchoir. Très écologique.", "score": 3 }
+                ]
+            },
+            {
+                "question": "Comment abordez-vous l'enseignement des mathématiques ?",
+                "answers": [
+                    { "text": "On compte les chewing-gums collés sous les tables. Pratique et concret !", "score": 1 },
+                    { "text": "Nous utilisons la méthode Pythagore-Ninja. C'est comme Pythagore, mais avec des shurikens.", "score": 2 },
+                    { "text": "Les multiplications se font en jonglant avec des pommes. Attention aux bosses !", "score": 3 }
+                ]
+            }
+        ]
+    },
+    {
+      "id": "car-salesman",
+      "variables": {
+        "title": "A chaque visite au garage...",
+        "sceneSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 600\"><!-- Sky background with clouds --><rect x=\"0\" y=\"0\" width=\"800\" height=\"400\" fill=\"#87CEEB\"/><path d=\"M50,100 Q75,80 100,100 T150,100 T200,100 T250,100\" fill=\"#FFFFFF\"/><path d=\"M500,50 Q525,30 550,50 T600,50 T650,50\" fill=\"#FFFFFF\"/><!-- Sun --><circle cx=\"700\" cy=\"100\" r=\"40\" fill=\"#FFD700\"/><path d=\"M700,50 L700,20 M670,70 L650,50 M730,70 L750,50 M650,100 L620,100 M750,100 L780,100\" stroke=\"#FFD700\" stroke-width=\"4\"/><!-- Ground --><rect x=\"0\" y=\"400\" width=\"800\" height=\"200\" fill=\"#228B22\"/><!-- Garage building --><rect x=\"100\" y=\"200\" width=\"600\" height=\"300\" fill=\"#CD7F32\"/><rect x=\"120\" y=\"220\" width=\"560\" height=\"260\" fill=\"#8B4513\"/><!-- Windows --><rect x=\"150\" y=\"250\" width=\"80\" height=\"80\" fill=\"#4682B4\"/><rect x=\"250\" y=\"250\" width=\"80\" height=\"80\" fill=\"#4682B4\"/><rect x=\"350\" y=\"250\" width=\"80\" height=\"80\" fill=\"#4682B4\"/><rect x=\"450\" y=\"250\" width=\"80\" height=\"80\" fill=\"#4682B4\"/><rect x=\"550\" y=\"250\" width=\"80\" height=\"80\" fill=\"#4682B4\"/><!-- Signage --><rect x=\"150\" y=\"150\" width=\"500\" height=\"80\" fill=\"#FF0000\"/><path d=\"M150,150 L650,150 L625,230 L175,230 Z\" fill=\"#8B0000\"/><text x=\"320\" y=\"210\" font-family=\"Arial\" font-size=\"48\" fill=\"white\">GARAGE</text><!-- Salesman --><rect x=\"200\" y=\"400\" width=\"60\" height=\"140\" fill=\"#000080\"/><circle cx=\"230\" cy=\"380\" r=\"30\" fill=\"#FFA07A\"/><rect x=\"215\" y=\"410\" width=\"30\" height=\"50\" fill=\"#FFFFFF\"/><rect x=\"225\" y=\"460\" width=\"10\" height=\"40\" fill=\"#FFFFFF\"/><rect x=\"200\" y=\"540\" width=\"30\" height=\"10\" fill=\"#000000\"/><rect x=\"230\" y=\"540\" width=\"30\" height=\"10\" fill=\"#000000\"/><!-- Car (variable) --><rect x=\"350\" y=\"450\" width=\"200\" height=\"60\" fill=\"#carColor#\"/><rect x=\"380\" y=\"410\" width=\"140\" height=\"50\" fill=\"#carColor#\"/><rect x=\"400\" y=\"430\" width=\"100\" height=\"30\" fill=\"#windowColor#\"/><circle cx=\"390\" cy=\"510\" r=\"25\" fill=\"#000000\"/><circle cx=\"390\" cy=\"510\" r=\"15\" fill=\"#FFFFFF\"/><circle cx=\"510\" cy=\"510\" r=\"25\" fill=\"#000000\"/><circle cx=\"510\" cy=\"510\" r=\"15\" fill=\"#FFFFFF\"/><!-- Customer (variable) --><rect x=\"600\" y=\"420\" width=\"50\" height=\"120\" fill=\"#customerClothesColor#\"/><circle cx=\"625\" cy=\"400\" r=\"25\" fill=\"#customerSkinColor#\"/><rect x=\"610\" y=\"425\" width=\"30\" height=\"40\" fill=\"#customerShirtColor#\"/><rect x=\"600\" y=\"540\" width=\"25\" height=\"10\" fill=\"#4B0082\"/><rect x=\"625\" y=\"540\" width=\"25\" height=\"10\" fill=\"#4B0082\"/><!-- Tools and equipment --><rect x=\"50\" y=\"500\" width=\"60\" height=\"40\" fill=\"#A9A9A9\"/><rect x=\"60\" y=\"480\" width=\"40\" height=\"20\" fill=\"#696969\"/><circle cx=\"70\" cy=\"530\" r=\"10\" fill=\"#000000\"/><circle cx=\"90\" cy=\"530\" r=\"10\" fill=\"#000000\"/><!-- Oil stains --><circle cx=\"400\" cy=\"580\" r=\"15\" fill=\"#000000\" fill-opacity=\"0.5\"/><circle cx=\"430\" cy=\"570\" r=\"10\" fill=\"#000000\" fill-opacity=\"0.5\"/></svg>",
+        "character1Name": "Vendeur",
+        "character2Name": "Client",
+        "character3Name": "Voiture",
+        "interactionName": "Vente",
+        "scoreUnit": "€",
+        "maxLostInteractions": 3
+      },
+      "conversations": [
+          {
+              "question": "Cette voiture consomme-t-elle beaucoup ?",
+              "answers": [
+                  { "text": "Elle a une consommation... disons, robuste. Mais c'est un gage de puissance !", "score": 1 },
+                  { "text": "La consommation ? Parlons plutôt de son confort exceptionnel !", "score": 2 },
+                  { "text": "Avec elle, vous ferez tellement d'économies que vous pourrez vous offrir un plein chaque semaine !", "score": 3 }
+              ]
+          },
+          {
+              "question": "A-t-elle déjà eu des accidents ?",
+              "answers": [
+                  { "text": "Des accidents ? Non, juste quelques... rencontres imprévues avec le mobilier urbain.", "score": 1 },
+                  { "text": "Aucun accident majeur, juste des égratignures qui lui donnent du caractère !", "score": 2 },
+                  { "text": "Cette voiture ? Elle sort à peine de sa bulle protectrice chez le concessionnaire !", "score": 3 }
+              ]
+          },
+          {
+              "question": "Quel est l'âge de cette voiture ?",
+              "answers": [
+                  { "text": "L'âge ? C'est comme le bon vin, elle se bonifie avec le temps !", "score": 1 },
+                  { "text": "Disons qu'elle a l'âge parfait : assez vieille pour être fiable, assez jeune pour être moderne.", "score": 2 },
+                  { "text": "Elle est si récente que la peinture n'a pas encore eu le temps de sécher !", "score": 3 }
+              ]
+          },
+          {
+              "question": "Que pensez-vous de la sécurité de cette voiture ?",
+              "answers": [
+                  { "text": "Elle est si sûre que vous pourriez dormir au volant ! Enfin... façon de parler, bien sûr.", "score": 3 },
+                  { "text": "La sécurité ? Parlons plutôt de sa superbe couleur !", "score": 1 },
+                  { "text": "Elle a des airbags. Probablement. Vous savez, la plupart des voitures en ont de nos jours.", "score": 2 }
+              ]
+          },
+          {
+              "question": "Cette voiture a-t-elle un historique d'entretien ?",
+              "answers": [
+                  { "text": "Un historique ? C'est une voiture, pas un musée !", "score": 1 },
+                  { "text": "Chaque petite réparation est documentée. Vraiment. Faites-moi confiance.", "score": 3 },
+                  { "text": "Elle a certainement été entretenue. Regardez comme elle brille !", "score": 2 }
+              ]
+          },
+          {
+              "question": "Quelle est la garantie sur cette voiture ?",
+              "answers": [
+                  { "text": "La meilleure garantie, c'est votre sourire quand vous la conduirez !", "score": 2 },
+                  { "text": "Garantie ? Avec une voiture pareille, vous n'en aurez jamais besoin !", "score": 1 },
+                  { "text": "Elle a une garantie standard, mais croyez-moi, vous voudrez l'étendre. Par précaution.", "score": 3 }
+              ]
+          },
+          {
+              "question": "Est-ce que cette voiture a des options supplémentaires ?",
+              "answers": [
+                  { "text": "Des options ? Elle en a tellement que j'ai oublié lesquelles sont standards !", "score": 3 },
+                  { "text": "La meilleure option, c'est le sourire que vous aurez en la conduisant.", "score": 1 },
+                  { "text": "Quelques-unes. Mais franchement, qui a besoin d'options avec un tel bijou ?", "score": 2 }
+              ]
+          },
+          {
+              "question": "Quel est le kilométrage de cette voiture ?",
+              "answers": [
+                  { "text": "Le kilométrage ? Disons qu'elle a juste été rodée par nos meilleurs pilotes d'essai.", "score": 2 },
+                  { "text": "Assez bas pour être impressionnant, assez haut pour être fiable. Le sweet spot, quoi !", "score": 3 },
+                  { "text": "Les kilomètres, c'est comme l'âge pour une femme, ça ne se demande pas !", "score": 1 }
+              ]
+          },
+          {
+              "question": "Cette voiture a-t-elle été repeinte ?",
+              "answers": [
+                  { "text": "Repeinte ? Non, c'est sa couleur naturelle. Elle change selon l'humeur du conducteur !", "score": 1 },
+                  { "text": "Une petite retouche par-ci par-là, rien de plus. C'est comme du maquillage pour les voitures.", "score": 2 },
+                  { "text": "Absolument pas. Cette peinture est aussi originale que le jour de sa sortie d'usine.", "score": 3 }
+              ]
+          },
+          {
+              "question": "Comment sont les performances de cette voiture ?",
+              "answers": [
+                  { "text": "Elle file comme le vent ! Enfin, un vent pas trop fort, hein.", "score": 2 },
+                  { "text": "Disons qu'elle ne gagnera pas de course, mais elle arrivera à destination... éventuellement.", "score": 1 },
+                  { "text": "C'est une fusée déguisée en voiture. Attachez bien votre ceinture !", "score": 3 }
+              ]
+          },
+          {
+              "question": "Y a-t-il des bruits étranges quand on roule ?",
+              "answers": [
+                  { "text": "Des bruits ? C'est le son du bonheur mécanique, mon cher !", "score": 1 },
+                  { "text": "Rien d'anormal, juste le doux ronronnement d'un moteur bien entretenu.", "score": 3 },
+                  { "text": "Quelques petits bruits, mais rien qu'une bonne radio ne puisse couvrir !", "score": 2 }
+              ]
+          },
+          {
+              "question": "Cette voiture a-t-elle un bon système de climatisation ?",
+              "answers": [
+                  { "text": "La clim ? Avec les vitres baissées, vous n'en aurez même pas besoin !", "score": 1 },
+                  { "text": "Elle transforme l'habitacle en igloo en un clin d'œil. Prévoyez un petit pull !", "score": 3 },
+                  { "text": "Disons qu'elle fonctionne... la plupart du temps. C'est rafraîchissant, non ?", "score": 2 }
+              ]
+          },
+          {
+              "question": "Quel type de carburant cette voiture utilise-t-elle ?",
+              "answers": [
+                  { "text": "Du carburant ? Je pensais qu'elle fonctionnait à l'eau ! Je plaisante, bien sûr.", "score": 1 },
+                  { "text": "Elle accepte tout : essence, diesel, jus d'orange... euh, peut-être pas le jus d'orange.", "score": 2 },
+                  { "text": "Le carburant standard, mais elle le transforme en pure performance comme par magie !", "score": 3 }
+              ]
+          },
+          {
+              "question": "Cette voiture a-t-elle un bon système audio ?",
+              "answers": [
+                  { "text": "Audio ? Le doux ronronnement du moteur est la seule musique dont vous aurez besoin !", "score": 2 },
+                  { "text": "C'est comme avoir un orchestre symphonique dans votre tableau de bord !", "score": 3 },
+                  { "text": "Il y a une radio. Elle capte au moins trois stations clairement !", "score": 1 }
+              ]
+          },
+          {
+              "question": "Y a-t-il des rappels ou des problèmes connus avec ce modèle ?",
+              "answers": [
+                  { "text": "Des problèmes ? La seule chose problématique sera de choisir où aller avec !", "score": 2 },
+                  { "text": "Aucun rappel, cette voiture est plus fiable que la gravité !", "score": 3 },
+                  { "text": "Rappels ? Ah oui, elle me rappelle constamment à quel point elle est géniale !", "score": 1 }
+              ]
+          },
+          {
+              "question": "Comment sont les freins de cette voiture ?",
+              "answers": [
+                  { "text": "Les freins ? Avec une telle voiture, vous ne voudrez jamais vous arrêter !", "score": 1 },
+                  { "text": "Ils sont si réactifs que vous pourriez vous arrêter sur une pièce de monnaie !", "score": 3 },
+                  { "text": "Ils font le travail. La plupart du temps. Gardez juste vos distances, au cas où.", "score": 2 }
+              ]
+          },
+          {
+              "question": "Cette voiture a-t-elle un grand coffre ?",
+              "answers": [
+                  { "text": "Grand ? C'est l'équivalent automobile de Mary Poppins !", "score": 3 },
+                  { "text": "Assez grand pour vos courses hebdomadaires. Mensuelle si vous mangez peu.", "score": 2 },
+                  { "text": "Le coffre ? Concentrons-nous plutôt sur son magnifique design !", "score": 1 }
+              ]
+          },
+          {
+              "question": "Comment est la visibilité depuis le siège conducteur ?",
+              "answers": [
+                  { "text": "C'est comme conduire dans un aquarium ! Un aquarium légèrement teinté.", "score": 2 },
+                  { "text": "Visibilité ? Qui a besoin de voir quand on peut sentir la route ?", "score": 1 },
+                  { "text": "Claire comme de l'eau de roche. Vous verrez même ce que vous ne voulez pas voir !", "score": 3 }
+              ]
+          },
+          {
+              "question": "Cette voiture a-t-elle des sièges en cuir ?",
+              "answers": [
+                  { "text": "Du cuir ? Non, c'est un nouveau matériau high-tech qui ressemble, sent et coûte comme du cuir !", "score": 2 },
+                  { "text": "Cuir ? Pfff, tellement 2010. Nous appelons ça du 'tissu de luxe amélioré'.", "score": 1 },
+                  { "text": "Oui, du vrai cuir italien. Ou peut-être grec. En tout cas, c'est définitivement du cuir !", "score": 3 }
+              ]
+          },
+          {
+              "question": "Y a-t-il un système de navigation intégré ?",
+              "answers": [
+                  { "text": "Bien sûr ! Il vous guidera... vers la prochaine aventure. Ou peut-être juste la prochaine station-service.", "score": 2 },
+                  { "text": "Navigation ? Avec cette voiture, tous les chemins mènent au bonheur !", "score": 1 },
+                  { "text": "Le dernier cri en matière de navigation. Il connaît même des raccourcis que Google ignore !", "score": 3 }
+              ]
+          }
+        ]
+    }
+]
