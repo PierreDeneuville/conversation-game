@@ -1,0 +1,10 @@
+# Exclure les fichiers volumineux de nodejs
+nodejs/*.exe
+nodejs/*.dll
+nodejs/npm
+nodejs/npx
+
+# Autres exclusions standard
+node_modules/
+*.log
+.env
