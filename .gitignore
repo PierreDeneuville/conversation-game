@@ -5,6 +5,8 @@ nodejs/npm
 nodejs/npx
 
 # Autres exclusions standard
+nodejs/
+npm.cmd
 node_modules/
 *.log
 .env
